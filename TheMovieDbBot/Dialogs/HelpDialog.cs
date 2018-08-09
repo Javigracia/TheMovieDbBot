@@ -19,13 +19,13 @@ namespace TheMovieDbBot.Dialogs
         internal static Activity GetHelp(Activity activity)
         {
             var reply = activity.CreateReply();
-            reply.Text = "Menu";
+            reply.Text = "Test Menu";
             reply.SuggestedActions = new SuggestedActions()
             {
                 Actions = new List<CardAction>
                 {
-                    new CardAction(ActionTypes.PostBack, "prueba", value: "prueba"),
-                    new CardAction(ActionTypes.PostBack, "prueba2", value: "prueba2")
+                    new CardAction(ActionTypes.PostBack, "boton1", value: "boton1"),
+                    new CardAction(ActionTypes.PostBack, "boton2", value: "boton2")
                 }
             };
             return reply;

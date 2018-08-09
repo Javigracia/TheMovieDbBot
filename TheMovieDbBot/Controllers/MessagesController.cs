@@ -79,9 +79,9 @@ namespace TheMovieDbBot
 
         private static HeroCard GetGreetingCard(IConversationUpdateActivity iConversationUpdated)
         {
-            var card = FactoryDialogControls.GetHeroCard("Prueba",
+            var card = FactoryDialogControls.GetHeroCard("TheMovieDb Bot",
                 null,
-                "Hola",
+                "Hi, Welcome to TheMovieDb Bot where you can answer about movies and actors",
                 null,
                 null);
             return card;
